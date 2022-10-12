@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="KTCTC">
-  <test thread-count="5" name="Regression">
+  <test thread-count="4" name="Regression" parallel="classes">
     <classes>
+      <class name="assertions.SoftAssertionInTestNG"/>
+      <class name="enable.EnableClass"/>
       <class name="annotations.testng.AnnotationInTestNG"/>
+      <class name="dependent.Dependent"/>
       <class name="annotations.testng.AnnotationInTestNG2"/>
-    </classes>
-  </test> 
-  <test thread-count="5" name="Smoke">
-    <classes>
       <class name="excelreader.AnnoTations"/>
+      <class name="invocation.Invocation"/>
+      <class name="ktctc.FirstMavenProject.AppTest"/>
+      <class name="priority.PriorityInTestNG"/>
+      <class name="assertions.AssertionInTestNG"/>
     </classes>
-  </test> 
+  </test> <!-- Regression -->
 </suite> <!-- KTCTC -->

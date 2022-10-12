@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assertions.AssertionInTestNG">
+      <class name="invocation.Invocation">
         <methods>
-          <include name="sampleAssertionTestCase"/>
           <include name="verifyUserCanLoginToApplicationWithValidCredentials"/>
         </methods>
-      </class> <!-- assertions.AssertionInTestNG -->
+      </class> <!-- invocation.Invocation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

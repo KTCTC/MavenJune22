@@ -32,7 +32,7 @@ public class AssertionInTestNG {
 		
 		Assert.assertNotEquals(cntSharPrice, "33.3");
 		
-		Assert.assertEquals(cntSharPrice, "456.34");
+		Assert.assertEquals(cntSharPrice, "456.334");
 		
 		String msg = "Invalid Credentioals";
 		

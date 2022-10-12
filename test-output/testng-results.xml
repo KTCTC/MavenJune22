@@ -1,13 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="1" failed="8" ignored="9" total="33" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="177" started-at="2022-10-11T21:23:19 IST" finished-at="2022-10-11T21:23:19 IST">
+  <suite name="KTCTC" duration-ms="217" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="177" started-at="2022-10-11T21:23:19 IST" finished-at="2022-10-11T21:23:19 IST">
+    <test name="Regression" duration-ms="217" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+      <class name="annotations.testng.AnnotationInTestNG2">
+        <test-method status="PASS" signature="beforeClassAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="beforeClassAnnotation" is-config="true" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassAnnotation -->
+        <test-method status="PASS" signature="verifySendEmailWillBeDisplayedInSendItem()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="verifySendEmailWillBeDisplayedInSendItem" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendEmailWillBeDisplayedInSendItem -->
+        <test-method status="PASS" signature="beforeMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="beforeMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodAnnotation -->
+        <test-method status="PASS" signature="afterMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="afterMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodAnnotation -->
+        <test-method status="PASS" signature="beforeMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="beforeMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodAnnotation -->
+        <test-method status="PASS" signature="verifyUserCanSendEmail()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="verifyUserCanSendEmail" duration-ms="3" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSendEmail -->
+        <test-method status="PASS" signature="afterMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="afterMethodAnnotation" is-config="true" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodAnnotation -->
+        <test-method status="PASS" signature="afterClassAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG2@74650e52]" name="afterClassAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassAnnotation -->
+      </class> <!-- annotations.testng.AnnotationInTestNG2 -->
+      <class name="invocation.Invocation">
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:invocation.Invocation@6acdbdf5]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:invocation.Invocation@6acdbdf5]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="FAIL" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:invocation.Invocation@6acdbdf5]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at invocation.Invocation.verifyUserCanLoginToApplicationWithValidCredentials(Invocation.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:invocation.Invocation@6acdbdf5]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:invocation.Invocation@6acdbdf5]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+      </class> <!-- invocation.Invocation -->
+      <class name="annotations.testng.AnnotationInTestNG">
+        <test-method status="PASS" signature="beforeSuiteAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="beforeSuiteAnnotation" is-config="true" duration-ms="27" started-at="2022-10-12T20:21:04 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuiteAnnotation -->
+        <test-method status="PASS" signature="beforeTestAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="beforeTestAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestAnnotation -->
+        <test-method status="PASS" signature="beforeClassAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="beforeClassAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassAnnotation -->
+        <test-method status="PASS" signature="beforeMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="beforeMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodAnnotation -->
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="PASS" signature="beforeMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="beforeMethodAnnotation" is-config="true" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodAnnotation -->
+        <test-method status="PASS" signature="afterMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="afterMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodAnnotation -->
+        <test-method status="PASS" signature="verifyUserCanNOtLoginToApplicationWithInvalidCredentials()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="verifyUserCanNOtLoginToApplicationWithInvalidCredentials" duration-ms="6" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanNOtLoginToApplicationWithInvalidCredentials -->
+        <test-method status="PASS" signature="afterMethodAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="afterMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodAnnotation -->
+        <test-method status="PASS" signature="afterClassAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="afterClassAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassAnnotation -->
+        <test-method status="PASS" signature="afterTestAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="afterTestAnnotation" is-config="true" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestAnnotation -->
+        <test-method status="PASS" signature="afterSuiteAnnotation()[pri:0, instance:annotations.testng.AnnotationInTestNG@4d95d2a2]" name="afterSuiteAnnotation" is-config="true" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuiteAnnotation -->
+      </class> <!-- annotations.testng.AnnotationInTestNG -->
+      <class name="priority.PriorityInTestNG">
+        <test-method status="PASS" signature="A()[pri:10, instance:priority.PriorityInTestNG@4b1c1ea0]" name="A" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method status="PASS" signature="Z()[pri:10, instance:priority.PriorityInTestNG@4b1c1ea0]" name="Z" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Z -->
+        <test-method status="PASS" signature="h()[pri:1, instance:priority.PriorityInTestNG@4b1c1ea0]" name="h" duration-ms="22" started-at="2022-10-12T20:21:05 IST" depends-on-methods="priority.PriorityInTestNG.Z" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h -->
+      </class> <!-- priority.PriorityInTestNG -->
+      <class name="dependent.Dependent">
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:dependent.Dependent@1786dec2]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="4" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="FAIL" signature="verifyUserCanSendEmail()[pri:0, instance:dependent.Dependent@1786dec2]" name="verifyUserCanSendEmail" duration-ms="1" started-at="2022-10-12T20:21:05 IST" depends-on-methods="dependent.Dependent.verifyUserCanLoginToApplicationWithValidCredentials" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at dependent.Dependent.verifyUserCanSendEmail(Dependent.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSendEmail -->
+        <test-method status="SKIP" signature="verifyUserCanSeeSentEmailInSentBox()[pri:0, instance:dependent.Dependent@1786dec2]" name="verifyUserCanSeeSentEmailInSentBox" duration-ms="0" started-at="2022-10-12T20:21:05 IST" depends-on-methods="dependent.Dependent.verifyUserCanSendEmail" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Dependent.verifyUserCanSeeSentEmailInSentBox()[pri:0, instance:dependent.Dependent@1786dec2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Dependent.verifyUserCanSeeSentEmailInSentBox()[pri:0, instance:dependent.Dependent@1786dec2] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSeeSentEmailInSentBox -->
+      </class> <!-- dependent.Dependent -->
+      <class name="assertions.SoftAssertionInTestNG">
+        <test-method status="FAIL" signature="sampleAssertionTestCase()[pri:0, instance:assertions.SoftAssertionInTestNG@53f65459]" name="sampleAssertionTestCase" duration-ms="16" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Object is not initialized somewhere expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Object is not initialized somewhere expected object to not be null
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at assertions.SoftAssertionInTestNG.sampleAssertionTestCase(SoftAssertionInTestNG.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleAssertionTestCase -->
+        <test-method status="FAIL" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:assertions.SoftAssertionInTestNG@53f65459]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="7" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+User profile name is not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+User profile name is not displayed expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at assertions.SoftAssertionInTestNG.verifyUserCanLoginToApplicationWithValidCredentials(SoftAssertionInTestNG.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+        <test-method status="FAIL" signature="verifyUserCanNOtLoginToApplicationWithInvalidCredentials()[pri:0, instance:assertions.SoftAssertionInTestNG@53f65459]" name="verifyUserCanNOtLoginToApplicationWithInvalidCredentials" duration-ms="3" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [456.5634] but found [456.34]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [456.5634] but found [456.34]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at assertions.SoftAssertionInTestNG.verifyUserCanNOtLoginToApplicationWithInvalidCredentials(SoftAssertionInTestNG.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanNOtLoginToApplicationWithInvalidCredentials -->
+      </class> <!-- assertions.SoftAssertionInTestNG -->
+      <class name="enable.EnableClass">
+        <test-method status="PASS" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:enable.EnableClass@3b088d51]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
+      </class> <!-- enable.EnableClass -->
       <class name="assertions.AssertionInTestNG">
-        <test-method status="FAIL" signature="sampleAssertionTestCase()[pri:0, instance:assertions.AssertionInTestNG@614ddd49]" name="sampleAssertionTestCase" duration-ms="24" started-at="2022-10-11T21:23:19 IST" finished-at="2022-10-11T21:23:19 IST">
+        <test-method status="FAIL" signature="sampleAssertionTestCase()[pri:0, instance:assertions.AssertionInTestNG@17579e0f]" name="sampleAssertionTestCase" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Object is not initialized somewhere expected object to not be null]]>
@@ -29,29 +343,16 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleAssertionTestCase -->
-        <test-method status="FAIL" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:assertions.AssertionInTestNG@614ddd49]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="2" started-at="2022-10-11T21:23:19 IST" finished-at="2022-10-11T21:23:19 IST">
+        <test-method status="FAIL" signature="verifyUserCanLoginToApplicationWithValidCredentials()[pri:0, instance:assertions.AssertionInTestNG@17579e0f]" name="verifyUserCanLoginToApplicationWithValidCredentials" duration-ms="5" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[User profile name is not displayed expected [true] but found [false]]]>
@@ -74,33 +375,85 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLoginToApplicationWithValidCredentials -->
-        <test-method status="PASS" signature="verifyUserCanNOtLoginToApplicationWithInvalidCredentials()[pri:0, instance:assertions.AssertionInTestNG@614ddd49]" name="verifyUserCanNOtLoginToApplicationWithInvalidCredentials" duration-ms="4" started-at="2022-10-11T21:23:19 IST" finished-at="2022-10-11T21:23:19 IST">
+        <test-method status="FAIL" signature="verifyUserCanNOtLoginToApplicationWithInvalidCredentials()[pri:0, instance:assertions.AssertionInTestNG@17579e0f]" name="verifyUserCanNOtLoginToApplicationWithInvalidCredentials" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [456.334] but found [456.34]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [456.334] but found [456.34]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at assertions.AssertionInTestNG.verifyUserCanNOtLoginToApplicationWithInvalidCredentials(AssertionInTestNG.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanNOtLoginToApplicationWithInvalidCredentials -->
       </class> <!-- assertions.AssertionInTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="excelreader.AnnoTations">
+        <test-method status="PASS" signature="beforeClassAnnotation()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="beforeClassAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassAnnotation -->
+        <test-method status="PASS" signature="beforeMethodAnnotation()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="beforeMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodAnnotation -->
+        <test-method status="PASS" signature="sampleATestCase()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="sampleATestCase" duration-ms="5" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleATestCase -->
+        <test-method status="PASS" signature="afterMethodAnnotation()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="afterMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodAnnotation -->
+        <test-method status="PASS" signature="beforeMethodAnnotation()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="beforeMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodAnnotation -->
+        <test-method status="PASS" signature="sampleBTestCase()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="sampleBTestCase" duration-ms="2" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleBTestCase -->
+        <test-method status="PASS" signature="afterMethodAnnotation()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="afterMethodAnnotation" is-config="true" duration-ms="0" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodAnnotation -->
+        <test-method status="PASS" signature="afterClassAnnotation()[pri:0, instance:excelreader.AnnoTations@15d0c81b]" name="afterClassAnnotation" is-config="true" duration-ms="1" started-at="2022-10-12T20:21:05 IST" finished-at="2022-10-12T20:21:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassAnnotation -->
+      </class> <!-- excelreader.AnnoTations -->
+    </test> <!-- Regression -->
+  </suite> <!-- KTCTC -->
 </testng-results>
