@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="invocation.Invocation">
+      <class name="screencapture.SampleClass">
         <methods>
-          <include name="verifyUserCanLoginToApplicationWithValidCredentials"/>
+          <include name="verifyUserCanLoginToFacebook"/>
+          <include name="afterMEthodAnnotation"/>
+          <include name="verifyUserCanUploadFileSuccessFully"/>
+          <include name="beforeClassAnno"/>
         </methods>
-      </class> <!-- invocation.Invocation -->
+      </class> <!-- screencapture.SampleClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

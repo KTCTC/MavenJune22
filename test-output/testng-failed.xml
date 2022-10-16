@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [KTCTC]">
-  <test thread-count="5" name="Regression(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="invocation.Invocation">
+      <class name="screencapture.SampleClass">
         <methods>
-          <include name="verifyUserCanLoginToApplicationWithValidCredentials"/>
+          <include name="verifyUserCanLoginToFacebook"/>
+          <include name="afterMEthodAnnotation"/>
+          <include name="verifyUserCanUploadFileSuccessFully"/>
+          <include name="beforeClassAnno"/>
         </methods>
-      </class> <!-- invocation.Invocation -->
-      <class name="assertions.SoftAssertionInTestNG">
-        <methods>
-          <include name="verifyUserCanLoginToApplicationWithValidCredentials"/>
-          <include name="sampleAssertionTestCase"/>
-          <include name="verifyUserCanNOtLoginToApplicationWithInvalidCredentials"/>
-        </methods>
-      </class> <!-- assertions.SoftAssertionInTestNG -->
-      <class name="dependent.Dependent">
-        <methods>
-          <include name="verifyUserCanLoginToApplicationWithValidCredentials"/>
-          <include name="verifyUserCanSeeSentEmailInSentBox"/>
-          <include name="verifyUserCanSendEmail"/>
-        </methods>
-      </class> <!-- dependent.Dependent -->
-      <class name="assertions.AssertionInTestNG">
-        <methods>
-          <include name="verifyUserCanNOtLoginToApplicationWithInvalidCredentials"/>
-          <include name="sampleAssertionTestCase"/>
-          <include name="verifyUserCanLoginToApplicationWithValidCredentials"/>
-        </methods>
-      </class> <!-- assertions.AssertionInTestNG -->
+      </class> <!-- screencapture.SampleClass -->
     </classes>
-  </test> <!-- Regression(failed) -->
-</suite> <!-- Failed suite [KTCTC] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
