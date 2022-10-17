@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class ScreenCapClass {
@@ -32,5 +33,9 @@ public class ScreenCapClass {
 		
 		FileUtils.copyFile(capFile, actImage);
 	}
+	
+	
+	@AfterMethod
+	
 
 }

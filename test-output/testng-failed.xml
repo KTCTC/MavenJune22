@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="screencapture.SampleClass">
+      <class name="brockenlinks.BrockenLinksClass5">
         <methods>
-          <include name="verifyUserCanLoginToFacebook"/>
-          <include name="afterMEthodAnnotation"/>
-          <include name="verifyUserCanUploadFileSuccessFully"/>
-          <include name="beforeClassAnno"/>
+          <include name="sampleLiunksMethod"/>
         </methods>
-      </class> <!-- screencapture.SampleClass -->
+      </class> <!-- brockenlinks.BrockenLinksClass5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
